@@ -1,0 +1,174 @@
+date=int(input("enter the date:"))
+month=input("enter the month:")
+year=int(input("enter the year:"))
+if date<=31 and month=="jan" and year>=0:
+    if date==31:
+        month="feb"
+        date=1
+        print(date)
+        print(month)
+        print(year)
+    else:    
+        date+=1
+        print(date)
+        print(month)
+        print(year)
+
+elif date<=29 and month=="feb" and year>=0:
+    if date==28 and year%4==0 or (year%400==0 and year%100==0):
+        date+=1
+        print(date)
+        print(month)
+        print(year)
+    elif date==29 and year%4!=0 or (year%400!=0 and year%100!=0):
+         print("entered year is not a leap year")    
+    elif date==28 and year%4!=0 or (year%400!=0 and year%100!=0):
+            month="mar"
+            date=1
+            print(date)
+            print(month)
+            print(year)
+    elif date==29 and year%4==0 or (year%400==0 and year%100==0):
+            month="mar"
+            date=1
+            print(date)
+            print(month)
+            print(year)
+   
+    else:    
+        date+=1
+        print(date)
+        print(month)
+        print(year)
+   
+elif date<=31 and month=="mar" and year>=0:
+    if date==31:
+        month="apr"
+        date=1
+        print(date)
+        print(month)
+        print(year)
+    else:    
+        date+=1
+        print(date)
+        print(month)
+        print(year)
+
+   
+if date<=30 and month=="apr" and year>=0:
+    if date==30:
+        month="may"
+        date=1
+        print(date)
+        print(month)
+        print(year)
+    else:    
+        date+=1
+        print(date)
+        print(month)
+        print(year)
+
+elif date<=31 and month=="may" and year>=0:
+    if date==31:
+        month="jun"
+        date=1
+        print(date)
+        print(month)
+        print(year)
+    else:    
+        date+=1
+        print(date)
+        print(month)
+        print(year)
+
+elif date<=30 and month=="jun" and year>=0:
+    if date==30:
+        month="jul"
+        date=1
+        print(date)
+        print(month)
+        print(year)
+    else:    
+        date+=1
+        print(date)
+        print(month)
+        print(year)
+
+elif date<=31 and month=="jul" and year>=0:
+   if date==31:
+        month="aug"
+        date=1
+        print(date)
+        print(month)
+        print(year)
+   else:    
+        date+=1
+        print(date)
+        print(month)
+        print(year)
+
+elif date<=31 and month=="aug" and year>=0:
+    if date==31:
+        month="sep"
+        date=1
+        print(date)
+        print(month)
+        print(year)
+    else:    
+        date+=1
+        print(date)
+        print(month)
+        print(year)
+
+elif date<=30 and month=="sep" and year>=0:
+    if date==30:
+        month="oct"
+        date=1
+        print(date)
+        print(month)
+        print(year)
+    else:    
+        date+=1
+        print(date)
+        print(month)
+        print(year)
+
+elif date<=31 and month=="oct" and year>=0:
+   if date==31:
+        month="nov"
+        date=1
+        print(date)
+        print(month)
+        print(year)
+   else:    
+        date+=1
+        print(date)
+        print(month)
+        print(year)
+
+elif date<=30 and month=="nov" and year>=0:
+   if date==30:
+        month="dec"
+        date=1
+        print(date)
+        print(month)
+        print(year)
+   else:    
+        date+=1
+        print(date)
+        print(month)
+        print(year)
+
+elif date<=31 and month=="dec" and year>=0:
+    if date==31:
+        month="jan"
+        date=1
+        year+=1
+        print(date)
+        print(month)
+        print(year)
+    else:    
+        date+=1
+        print(date)
+        print(month)
+        print(year)
