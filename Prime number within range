@@ -1,0 +1,7 @@
+n = int(input("enter:"))
+for i in range(0,n):
+    if i%2 !=0:
+        print("prime nubers are" , i)
+        
+    else:
+        print("not prime num are", i)
