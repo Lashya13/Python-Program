@@ -1,0 +1,38 @@
+person= input("person choice:")
+computer=['stone', 'paper', 'siccsor']
+pc = 0
+cc = 0
+
+import random
+random.shuffle(computer)
+print(computer[0])
+if computer[0]== "stone":
+    if person=="stone":
+        print('both are tie')
+    elif person=="paper":
+        print("person win \n computer loose ")
+        pc=pc+1
+    elif person=="siccsor":
+        print("computer win \n person loose ") 
+        cc=cc+1
+elif computer[0]== "paper":
+    if person=="stone":
+        print("computer wins \n person loose")
+        cc=cc+1
+    elif person=="paper":
+       print("both are tie")
+    elif person=="siccsor":
+        print("person win \n computer loose ")
+        pc=pc+1
+elif computer[0]=="siccsor":
+    if person =="stone":
+        print ("person win \n computer loose ")
+        pc=pc+1
+    elif person =="paper":
+        print("computer win \n person loose ")
+        cc=cc+1
+    elif (person=="siccsor"):
+        print("both are tie")
+             
+print("person score:", pc)
+print("computer score:", cc)
