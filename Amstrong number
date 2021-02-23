@@ -1,0 +1,10 @@
+num = int(input("enter the number:"))
+sum=0
+temp= num
+while temp > 0:
+    sum+= (temp%10)**3
+    temp= temp//10
+if (temp==sum):
+    print("amstrong number")
+else:
+    print("not an amstrong number") 
