@@ -1,0 +1,6 @@
+name =input("enter the input:")
+rev = name[::-1]
+if name == rev:
+    print( name,'\n', "Its is palindrome")
+else:
+   print(name, '\n', rev, "Its not a palindrome")    
